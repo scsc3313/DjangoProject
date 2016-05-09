@@ -1,0 +1,15 @@
+{% if person_list %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>INDEX</title>
+  </head>
+  <body>
+
+    {% for person in person_list%}
+    {{ person.first_name }}
+    {% endfor %}
+  </body>
+</html>
+{% endif %}
